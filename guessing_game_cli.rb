@@ -2,7 +2,7 @@
 def run_guessing_game
   rand_num = rand(6)+1
   user_guess = gets.chomp
-  if user_guess == rand_num
+  if user_guess+1 == rand_num
     puts "You guessed the correct number!"
   elsif user_guess != rand_num && user_guess != "exit"
     puts "Sorry! The computer guessed #{rand_num}."
